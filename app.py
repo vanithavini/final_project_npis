@@ -122,3 +122,16 @@ Final Score =
     Priority-aware sorting ensures editorial clarity.
     """)
 
+
+    st.subheader("Example Comparison")
+
+    st.write("""
+    Example 1:
+    "Breaking: Massive earthquake devastates city"
+    → High emotion + urgency → High popularity score
+
+    Example 2:
+    "Quarterly economic statistics released"
+    → Low emotion + low urgency → Lower popularity score
+    """)
+
