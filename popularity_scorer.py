@@ -34,7 +34,7 @@ class PopularityScorer:
     def priority_label(self, score):
         if score < 35:
             return "Non-Priority"
-        elif score < 80:
+        elif score < 70:
             return "Medium Priority"
         else:
             return "High Priority"
