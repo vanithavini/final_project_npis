@@ -22,10 +22,8 @@ page = st.sidebar.radio(
     ["Home", "News Intelligence", "Model Reasoning"]
 )
 
-
-# =========================
 # 1️⃣ HOME PAGE
-# =========================
+###############
 if page == "Home":
     st.header("Project Overview")
 
@@ -49,10 +47,14 @@ if page == "Home":
     5. Ranking & Explainability
     """)
 
+    st.write("""
+    Popularity labels such as clicks, shares, and engagement metrics 
+    are not available at prediction time. Therefore, we model 
+    popularity as a latent variable inferred through linguistic signals.
+    """) 
 
-# =========================
 # 2️⃣ NEWS INTELLIGENCE
-# =========================
+########################
 elif page == "News Intelligence":
 
     st.header("News Popularity Prediction")
@@ -81,10 +83,8 @@ elif page == "News Intelligence":
             for signal, value in top_reasons:
                 st.write(f"**{signal.capitalize()}** → {value}% contribution")
 
-
-# =========================
 # 3️⃣ MODEL REASONING
-# =========================
+#####################
 elif page == "Model Reasoning":
 
     st.header("Model Reasoning & Explainability")
